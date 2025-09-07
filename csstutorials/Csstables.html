@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css tables</title>
+</head>
+<style>
+    table, th, td{
+        border: 5px solid;  /*provides border on full table*/
+        width: 900px;
+        border-collapse: collapse;  /*removes gapping*/
+        height: 70px;
+        text-align: center;    /*used for text alignment*/
+        vertical-align: bottom;    /*vertically positioning the text*/
+        padding: 15px;
+        border-bottom: 5px solid red;
+        display:flexbox;
+        max-width: 500px;    /*max width is specified*/
+        position:static;   /* if fixed so it will not move, absolute moves with scrolling, static is maintained by default*/
+    }
+    tr:hover{
+        background-color: aqua;
+        color: coral;
+    }
+    tr:visited{
+        background-color: brown;
+    }
+    img{
+        position: absolute;
+        float: right;  /*img should be rightside of text*/
+        background-color: aqua;
+        border: 5px solid maroon;
+        height: 200px;
+        width: 200px;
+        left: 0px;
+        right: 0px;
+        top: 10px;
+        z-index: -1;  /*specifies which will displayed in the front of the webpage since this is -1 so it will be displayed behind the table*/
+    }
+    div{
+        overflow: scroll;  /*overflow is clipped and scrollbar is added to show the lenght of the hidden data.*/
+        overflow-x: scroll;
+        z-index: -1;
+    }
+</style>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>companies</th>
+                <th>contacts</th>
+                <th>countries</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfred Kurkey</td>;
+                <td>Maria Anders</td>;
+                <td>Germany</td>;
+            </tr>
+        </tbody>
+    </table>
+    <table></table>
+        <thead>
+            <tr>
+                <th>companies</th>
+                <th>contacts</th>
+                <th>countries</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfred Kurkey</td>;
+                <td>Maria Anders</td>;
+                <td>hiiii</td>;
+            </tr>
+        </tbody>
+    </table>
+    <table></table>
+        <thead>
+            <tr>
+                <th>companies</th>
+                <th>contacts</th>
+                <th>countries</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfred Kurkey</td>;
+                <td>Maria Anders</td>;
+                <td>Germany</td>;
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore earum expedita sequi corporis harum animi ipsum numquam voluptatum eius vel magni velit, unde, ipsam perferendis vitae maxime similique dicta quasi voluptas laborum. Id quod, aut, ad dicta quaerat corporis, iste obcaecati culpa quasi asperiores accusamus ipsam adipisci iure quos similique rerum perferendis dolore consequatur totam doloremque eius autem! Aliquam, exercitationem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maiores id odio, provident perferendis repellendus porro illo cumque vero numquam mollitia animi explicabo laudantium doloribus eos nihil excepturi itaque dolores.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim amet, quaerat temporibus, sint dignissimos consequuntur assumenda ad nihil sapiente perferendis beatae illum ducimus doloribus eaque odio dolores perspiciatis facere quia nulla ut laborum quas deserunt numquam eveniet. Vel inventore, laborum non repellat asperiores, exercitationem sit animi minus delectus at maiores voluptates repudiandae aliquam saepe tenetur veritatis suscipit minima debitis totam ipsa magnam consequuntur placeat. Reprehenderit dolorum voluptatem vel cum quam blanditiis accusantium fuga optio possimus nihil! Inventore corporis expedita at quia tenetur quasi, quis commodi provident est maxime, eligendi fuga, laborum numquam cumque doloribus odio ea nesciunt ipsum pariatur totam necessitatibus officia quisquam suscipit architecto. Impedit, fuga? Maiores facere error nulla sequi totam, similique ratione commodi quis. Odit repellendus quos a temporibus, eveniet vero nulla qui tenetur quisquam, error molestiae voluptates deserunt quod voluptatem inventore iure repellat autem, minima commodi recusandae dolore praesentium adipisci! Velit earum commodi ut numquam non architecto, officiis culpa aliquid odit quae beatae enim vel ipsum est nisi quaerat quia nemo soluta libero? Magnam corrupti molestias ipsa mollitia optio est, ex dolorem doloremque, numquam officiis temporibus minus iste enim quaerat cumque. Vero adipisci laudantium voluptas, pariatur, dicta possimus quia sapiente nesciunt, quam voluptate odio distinctio in.
+    </div>
+    <img src="./jeans.jpeg" alt="Cherry blossom"><img src="./jeans.jpeg" alt="Cherry blossom">
+    <img src="./jeans.jpeg" alt="Cherry blossom"><img src="./jeans.jpeg" alt="Cherry blossom">
+</body>
+</html>

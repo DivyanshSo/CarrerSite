@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships And Jobs</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+</head>
+<body>
+    <h1>Availible Jobs</h1>
+    <ul id="job-list"></ul>
+    <script>
+        const db = firebase.firestore();
+db.collection("jobs").get().then(snapshot => {
+    snapshot.forEach(doc => {
+        let job = doc.data();
+        let li = document.createElement("li");
+        li.innerHTML = `<strong>${job.title}</strong> -${job.company}`;
+        document.getElementById("job-list").appendChild(li);
+    });
+})
+    </script>
+</body>
+</html>

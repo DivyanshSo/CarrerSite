@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeans</title>
+    <style>
+
+        /*1. Element selector....*/
+        div{                                       
+            background-color: rgb(162, 140, 140);
+        }
+        /* 2. Class selector.... */
+        .red{
+            background-color: red;
+        }
+
+        /* 3. Id selector (means id is green)*/
+        #green{
+            background-color: green;
+        }
+
+        /* 4. Child Selector (p is child of div)*/
+        div > p{
+            color: blue;
+            background-color: rgb(201, 77, 20);
+        }
+
+        /* 5.  Descendant Selector p is descendant  of  div*/
+        div p{
+            color: blue;
+            background-color: aliceblue;
+        }
+
+        /* 6. Universal selector */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* 7. Pseudo Selector */
+        a :visited{
+            color: blueviolet;
+            background-color: blanchedalmond;
+        }
+        a :link{
+            color: green;
+
+        }
+        a:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div right here...
+    </div>
+    <div>
+        Heloo how are you
+    </div>
+    <div id = "green">
+        Hello this is id selector..
+
+    </div>
+    <div>
+        <p> 
+            Hello i am a para inside div here..
+        </p>
+    </div>
+    <div>
+        <article>
+            <p>This is another paragragh of descendant div</p>
+        </article>
+    </div>
+    <div>
+        <a href="https://www.google.com">Go to google</a>
+        <a href="https://www.instagram.com">Go to instagram</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<style>
+    header{
+        background-color: aqua;
+        color: black;
+        font-size: 50px;
+        text-align: center;
+        padding: 20px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: black;
+    }
+    .topnav a{
+        float:none;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: underline;
+        color: darkorange;
+    }
+    .topnav a:hover{
+        background-color:darkolivegreen;
+    }
+    coloumn1{
+        float:left;
+        width: 33.33%;
+        margin: 10px;
+        border: 3px solid aqua;
+        height:250px;
+    }
+    .coloumn.middle{
+        width: 33.33%;
+        margin: 10px;
+        border: 5px solid blue;
+    }
+    .coloumn.right.right{
+        width: 33.33%;
+        margin: 10px;
+        
+    }
+    .row::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @media screen and (max-width:600px){
+        .coloumn1{
+            width: 100%;
+        }
+    }
+    footer{
+        background-color: olive;
+        text-align: center;
+        padding: 10px;
+    }
+    .ending{
+        display: block;
+        text-align: center;
+        margin: 40px;
+        color:rgb(146, 213, 146);
+        background-color:crimson;
+    }
+    button{
+        color: deepskyblue;
+        background-color:rgb(208, 151, 235);
+    }
+    button:hover{
+        color: red;
+        background-color: white;
+    }
+</style>
+<header>Welcome to the place of Divyansh Soni</header>
+<body>
+    <nav class="topnav">
+        <a href="shirts.html">Shirts</a>
+        <a href="www.google.com">Google</a>
+        <a href="www.facebook.com">Facebook</a>
+        <a href="www.instagram.com">Instagram</a>
+    </nav>
+    <div class="coloumn1">
+        <h1>Coloumn 1</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Nostrum ratione, recusandae quasi odio deserunt
+        ex autem minima dolores aliquid assumenda ducimus, 
+        reprehenderit consectetur quos exercitationem saepe 
+        sint suscipit doloremque ad porro! Vitae veritatis 
+        nesciunt sunt corporis ratione nemo dolores maiores.
+    </div>
+    <br>
+    <div class="coloumn.middle"></div>
+        <h1>Coloumn 2</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Nostrum ratione, recusandae quasi odio deserunt
+        ex autem minima dolores aliquid assumenda ducimus, 
+        reprehenderit consectetur quos exercitationem saepe 
+        sint suscipit doloremque ad porro! Vitae veritatis 
+        nesciunt sunt corporis ratione nemo dolores maiores.
+    </div>
+    <br>
+    <div class="coloumn.right"></div>
+        <h1>Coloumn 3</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Nostrum ratione, recusandae quasi odio deserunt
+        ex autem minima dolores aliquid assumenda ducimus, 
+        reprehenderit consectetur quos exercitationem saepe 
+        sint suscipit doloremque ad porro! Vitae veritatis 
+        nesciunt sunt corporis ratione nemo dolores maiores.
+    </div>
+    <br>
+    <div class="ending">
+        Thanks for Visiting my Website......
+    </div>
+    <footer>
+        <article>
+            <h2>About Me</h2> 
+            <p>
+                My name is Divyansh Soni.I am a student currently pursuing
+                B.Tech CSE in Babu Banarsi Das University and i am in third year.        
+            </p>
+            <button><a href="https://www.linkedin.com/feed/">Linked in</a></button>
+            <button><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></button>
+        </article>
+    </footer>
+</body>
+</html>

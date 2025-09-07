@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css links</title>
+</head>
+<style>
+    a{
+        color: hotpink;   /*link color is used;*/
+        background-color: black;
+    }
+    a:visited{            /*link is clicked then color changes*/ 
+        color: blueviolet;
+        background-color: black;
+    }
+    a:hover{             /*if cursor is moved over it*/
+        color: cyan;
+        text-decoration: underline;
+    }
+    a:active{
+        color: blue;
+    }
+    a:link, a:visited{         /*making of a button*/
+        background-color: #f4436f;
+        color: white;
+        padding: 20px 20px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <h1 class="links">Styling google link</h1>
+    <a href="https://www.google.com">Google Page</a>
+
+</body>
+</html>

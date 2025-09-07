@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specifity</title>
+</head>
+<style>
+    .box{
+        color: aqua;
+        box-sizing: border-box;
+        width: 50vw;
+        margin: auto;
+        height: 80vh;
+        background-color: black;
+        font-size: 1em;
+        /*......priority for element selector in css.......
+        element selector < class selector < id selector < inline style <  !important..*/
+    }
+
+    p{
+        background-color: grey !important;  /*use of !important is done here*/
+
+    }
+
+    .nice{
+        /* not performed  because of use of !important*/
+        color: blue;   
+        background-color: aqua;
+    }
+
+</style>
+    <body>
+        <div class="box">
+        this is a box.
+        </div>
+        <p class="nice">
+            this is a paragraph inside a paragraph showing important..
+        </p>
+    </body>
+</html>

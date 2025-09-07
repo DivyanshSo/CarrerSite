@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css align elements</title>
+</head>
+<style>
+    .center{
+        margin: auto;       /*creates a automatic margin*/
+        width: 50%;
+        border: 5px solid green;
+        padding: 10px;
+    }
+    .centeraligntext{         /*div centered using text align*/
+        text-align: center;
+        border: 10px solid red;
+        padding: 10px;
+        margin: 25px;
+    }
+    img{                /*centering a image*/
+        height: 200px;        
+        width: 200px;        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid black ;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        opacity: 1.0;
+    }
+    img:hover{      /*mouse hovers will decrease opacity*/
+        opacity: 0.5;
+    }
+    .flex{     /*vertically and horizontally centered*/
+        display: flex;
+        justify-content: center;  /*centres text*/
+        align-items: center;
+        height: 100px;
+        border: 5px solid green;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div class="center">
+        I am a element inside a div....
+    </div>
+    <div class="centeraligntext">
+        I am a div centerd with center align text...
+    </div>
+    <img src="./jeans2.jpg" alt="Jeanspic">
+    <div class = "flex">
+        I am vertically and horizontally centered.
+    </div>
+</body>
+</html>

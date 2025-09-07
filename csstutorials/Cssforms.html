@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css forms</title>
+</head>
+<style>
+    input[type=number]{       /* to take text input from user*/
+        border: 5px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 20px;
+    }
+    input[type=text]{
+        border: none;
+        border-bottom: 7px solid blue;  /*used for bottom border*/
+        margin: 30px;
+    }
+    input[type=datetime-local]{
+        border: 5px solid brown;
+        margin: 20px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <h2>Enter personal details</h2>
+    <div class="input">Type your age</div>
+    <input type="number">
+    <div class ="name">Type your name</div>
+    <input type="text">
+    <div class="dateandtime">Enter your date and time</div>
+    <input type="datetime-local" name="datetime-local" id="datetime-local">
+</body>
+</html>
