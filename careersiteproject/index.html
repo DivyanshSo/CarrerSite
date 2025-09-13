@@ -1,52 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn and Get Hired</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learnify -A Platform For The Future Of Tech — Interactive Programming Courses</title>
+  <meta name="description" content="Interactive programming courses, projects, and certifications to help you land your dream job. Join Learn and Get Hired today." />
+  <meta name="theme-color" content="#0b74de" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Learn and Get Hired" />
+  <meta property="og:description" content="Interactive programming courses, projects, and certifications to help you land your dream job." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:image" content="assets/images/og-image.png" />
+
+  <!-- Favicon (add files in assets) -->
+  <link rel="icon" href="assets/favicon.ico" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Css/style.css" />
+
+  <!-- Structured data (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Learn and Get Hired",
+    "url": "https://yourdomain.com",
+    "logo": "https://yourdomain.com/assets/images/logo.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "support@learnandgethired.com",
+      "contactType": "customer support"
+    }]
+  }
+  </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Welcome to Learn and Get Hired</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="courses.html">Courses</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (localStorage.getItem('loggedIn') !== 'true') {
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+  
+
+  <script>
+    document.getElementById('logout-btn').addEventListener('click', () => {
+      localStorage.removeItem('loggedIn');
+      alert('Logged out successfully');
+      window.location.href = 'login.html';
+    });
+  </script>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Learn and Get Hired home">Learnify - A Platform For The Future of Tech</a>
+
+      <button id="menu-toggle" class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <h1 id="hero-heading">Master Programming and Get Certified</h1>
+        <p>Join our platform to learn programming interactively and achieve your dream career.</p>
+        <p>
+          <a class="btn-primary" href="courses.html">Start Learning</a>
+          <a class="btn-outline" href="about.html">Learn More</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="features" class="features" aria-labelledby="features-heading">
+      <div class="container">
+        <h2 id="features-heading">Why Choose Us?</h2>
+        <div class="features-grid">
+          <article class="feature" aria-labelledby="f1">
+            <h3 id="f1">Interactive Courses</h3>
+            <p>Hands-on projects, quizzes, and mentor support.</p>
+          </article>
+
+          <article class="feature" aria-labelledby="f2">
+            <h3 id="f2">Certification</h3>
+            <p>Industry-recognized certificates on completion.</p>
+          </article>
+
+          <article class="feature" aria-labelledby="f3">
+            <h3 id="f3">Career Opportunities</h3>
+            <p>Internships and job placement assistance.</p>
+          </article>
         </div>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>Master Programming and Get Certified!</h2>
-            <p>Join our platform to learn programming interactively and achieve your dream career.</p>
-            <button onclick="location.href='courses.html'">Start Learning!</button>
-        </section>
-        <section id="features">
-            <h2>Why Choose Us?</h2>
-            <div class="features-container">
-                <div class="feature">
-                    <h3>Interactive Courses</h3>
-                    <p>Learn through hands-on projects, quizzes, and videos.</p>
-                </div>
-                <div class="feature">
-                    <h3>Certification</h3>
-                    <p>Earn industry-recognized certifications upon completion.</p>
-                </div>
-                <div class="feature">
-                    <h3>Career Opportunities</h3>
-                    <p>Access internships and job placements tailored to your skills.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="contact">
-        <div class="container">
-            <p>&copy; 2025 Learn and Get Hired | All rights reserved | Divyansh Soni</p>
-            <p>Contact us: <a href="mailto:support@learnandgethired.com">support@learnandgethired.com</a></p>
-        </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- Optional: Short contact form -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Get in touch</h2>
+        <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Learn and Get Hired | All rights reserved | Divyansh Soni</p>
+      <p>Contact: <a href="mailto:support@learnandgethired.com">support@learnandgethired.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <button onclick="logout()">Logout</button>
+  <script src="auth.js" defer></script>
 </body>
 </html>

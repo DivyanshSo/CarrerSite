@@ -1,0 +1,151 @@
+/* About Page Specific Styles */
+.page-hero {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: var(--white);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Section Styling */
+.about-section,
+.mission-section,
+.values-section,
+.team-section {
+  padding: 4rem 0;
+}
+
+.bg-light {
+  background-color: var(--light-gray);
+}
+
+/* Section Headers */
+section h2 {
+  font-size: 2.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Values List Styling */
+.values-list {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.values-list li {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.values-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.team-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: var(--secondary-color);
+}
+
+.team-card p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.team-card a {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.team-card a:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+/* Mission Section */
+.mission-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .values-list li {
+    padding-left: 1.5rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.about-section,
+.mission-section,
+.values-section,
+.team-section {
+  animation: fadeIn 0.8s ease-out forwards;
+}

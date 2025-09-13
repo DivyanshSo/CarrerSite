@@ -1,104 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courses - Learnify -A platform For The Future Of Tech</title>
+  <meta name="description"
+    content="Explore courses on Web Development, Data Science, Machine Learning, Cybersecurity and more." />
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Online Tech Courses - Learnify" />
+  <meta property="og:description" content="Master programming with our practical, project-based courses." />
 
-        .container {
-            padding: 2rem;
-        }
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/courses.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  
 
-        .course-card {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 1rem 0;
-            padding: 1rem;
-            transition: transform 0.2s;
-        }
-
-        .course-card:hover {
-            transform: scale(1.02);
-        }
-
-        .course-card h3 {
-            margin-top: 0;
-        }
-
-        .course-card p {
-            margin: 0.5rem 0;
-        }
-
-        .enroll-button {
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 4px;
-            color: white;
-            cursor: pointer;
-            padding: 0.5rem 1rem;
-            text-align: center;
-        }
-
-        .enroll-button:hover {
-            background-color: #45a049;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-            margin-top: 2rem;
-        }
-    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Explore Our Courses</h1>
-    </header>
+  <!-- Header (keep consistent with other pages) -->
+  <header class="site-header" role="banner">
     <div class="container">
-        <div class="course-card">
-            <h3>Web Development</h3>
-            <p>Learn to build stunning websites using HTML, CSS, and JavaScript.</p>
-            <button class="enroll-button">Enroll Now</button>
-        </div>
-
-        <div class="course-card">
-            <h3>Data Science</h3>
-            <p>Master the art of data analysis and visualization with Python and R.</p>
-            <button class="enroll-button">Enroll Now</button>
-        </div>
-
-        <div class="course-card">
-            <h3>Machine Learning</h3>
-            <p>Explore the world of AI by building predictive models and algorithms.</p>
-            <button class="enroll-button">Enroll Now</button>
-        </div>
-
-        <div class="course-card">
-            <h3>Cybersecurity</h3>
-            <p>Protect networks and data from cyber threats with hands-on techniques.</p>
-            <button class="enroll-button">Enroll Now</button>
-        </div>
+      <a href="index.html" class="logo">Learnify - A Platform For The Future Of Tech</a>
+      <nav class="primary-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html" class="active">Courses</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <footer>
-        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
-    </footer>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Explore Our Courses</h1>
+        <p>Practical, project-based courses to help you build skills and get hired.</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <span>10,000+ Students</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-star"></i>
+            <span>4.8 Average Rating</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-certificate"></i>
+            <span>Industry Certified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses-section container">
+      <div class="courses-controls">
+        <div class="search-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input id="search" type="search" placeholder="Search courses (e.g., 'web', 'python')"
+            aria-label="Search courses" />
+        </div>
+        <select id="category-filter" aria-label="Filter by category">
+          <option value="">All Categories</option>
+          <option value="web">Web Development</option>
+          <option value="data">Data Science</option>
+          <option value="ml">Machine Learning</option>
+          <option value="security">Cybersecurity</option>
+          <option value="mobile">Mobile Development</option>
+          <option value="design">UI/UX Design</option>
+        </select>
+        <select id="level-filter" aria-label="Filter by level">
+          <option value="">All Levels</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+
+      <div class="results-info">
+        <p id="results-count">Showing All Courses</p>
+        <div class="view-toggle">
+          <button class="grid-view active" aria-label="Grid view">
+            <i class="fas fa-th"></i>
+          </button>
+          <button class="list-view" aria-label="List view">
+            <i class="fas fa-list"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="courses-grid" class="courses-grid" aria-live="polite">
+        <!-- JS will populate course cards here -->
+        <div class="loading-placeholder">
+          <div class="spinner"></div>
+          <p>Loading courses...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Enhanced Modal -->
+  <div id="course-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close details">
+        <i class="fas fa-times"></i>
+      </button>
+      <header class="modal-header">
+        <h2 id="modal-title"></h2>
+        <div id="modal-sub" class="modal-meta"></div>
+        <div class="course-rating">
+          <div class="stars"></div>
+          <span class="rating-count"></span>
+        </div>
+      </header>
+      <div class="modal-body">
+        <div class="course-preview">
+          <img id="modal-image" src="" alt="" />
+        </div>
+        <p id="modal-desc"></p>
+        <div class="course-highlights">
+          <h3>What You'll Learn</h3>
+          <ul id="modal-topics"></ul>
+        </div>
+        <div class="course-details">
+          <div class="detail-item">
+            <i class="fas fa-clock"></i>
+            <span id="modal-duration"></span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-signal"></i>
+            <span id="modal-level"></span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-certificate"></i>
+            <span>Certificate Included</span>
+          </div>
+        </div>
+      </div>
+      <footer class="modal-actions">
+        <div class="price-box">
+          <span id="modal-price"></span>
+        </div>
+        <div class="action-buttons">
+          <a id="enroll-link" class="btn-primary" href="#">
+            <i class="fas fa-graduation-cap"></i> Enroll Now
+          </a>
+          <button class="btn-outline add-wishlist">
+            <i class="far fa-heart"></i> Save
+          </button>
+        </div>
+      </footer>
+    </div>
+    <div class="modal-backdrop" data-dismiss="true"></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Need Help?</h3>
+          <a href="contact.html" class="btn-outline">Contact Support</a>
+        </div>
+        <p class="copyright">&copy; 2025 Learnify. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="courses.js" defer></script>
+  <button onclick="logout()">Logout</button>
+  <script src="auth.js" defer></script>
 </body>
+
 </html>

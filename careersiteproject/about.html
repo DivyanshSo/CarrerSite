@@ -1,63 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Learn and Get Hired</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us - Learnify -A Platform For The Future Of Tech</title>
+  <meta name="description" content="Learn and Get Hired is a platform empowering learners with practical programming skills, certifications, and career opportunities." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>About Us</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="courses.html">Courses</a>
-                <a href="about.html">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo">Learnify - A Platform For The Future Of Tech</a>
+      <nav class="primary-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>Our story, our mission, and the people behind Learn and Get Hired.</p>
+      </div>
+    </section>
+
+    <section class="about-section container">
+      <h2>Who We Are</h2>
+      <p>
+        Welcome to <strong>Learn and Get Hired</strong>, a platform designed to empower students and professionals
+        by providing them with the skills they need to excel in the tech industry. We believe in a hands-on approach
+        to learning, where users can practice what they learn and apply it in real-world scenarios.
+      </p>
+    </section>
+
+    <section class="mission-section bg-light">
+      <div class="container">
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to bridge the gap between education and employment by equipping learners with
+          industry-relevant programming skills, certifications, and career opportunities. We aim to foster a
+          community of passionate learners who are ready to take on the challenges of the ever-changing tech
+          landscape.
+        </p>
+      </div>
+    </section>
+
+    <section class="values-section container">
+      <h2>What Sets Us Apart?</h2>
+      <ul class="values-list">
+        <li><strong>Comprehensive Learning:</strong> Interactive courses that focus on practical skills.</li>
+        <li><strong>Certifications:</strong> Industry-recognized credentials to showcase your achievements.</li>
+        <li><strong>Career Support:</strong> Guidance, internship opportunities, and job placement assistance.</li>
+        <li><strong>Accessible Anywhere:</strong> Learn at your own pace with web and mobile access.</li>
+      </ul>
+    </section>
+
+    <section class="team-section bg-light">
+      <div class="container">
+        <h2>Meet Our Team</h2>
+        <p>We are a team of passionate developers, educators, and industry experts dedicated to creating a learning experience that is engaging, effective, and impactful.</p>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <img src="assets/images/team1.jpg" alt="Divyansh Soni - Founder" />
+            <h3>Divyansh Soni</h3>
+            <p>Founder & Lead Instructor</p>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+          </article>
+          <article class="team-card">
+            <img src="assets/images/team2.jpg" alt="Priya Sharma - Curriculum Designer" />
+            <h3>Priya Sharma</h3>
+            <p>Curriculum Designer</p>
+            <a href="#">LinkedIn</a>
+          </article>
+          <article class="team-card">
+            <img src="assets/images/team3.jpg" alt="Amit Verma - Career Coach" />
+            <h3>Amit Verma</h3>
+            <p>Career Coach</p>
+            <a href="#">LinkedIn</a>
+          </article>
         </div>
-    </header>
-    <main>
-        <section class="about-section">
-            <h2>Who We Are</h2>
-            <p>
-                Welcome to <strong>Learn and Get Hired</strong>, a platform designed to empower students and professionals
-                by providing them with the skills they need to excel in the tech industry. We believe in a hands-on approach
-                to learning, where users can practice what they learn and apply it in real-world scenarios.
-            </p>
-        </section>
-        <section class="mission-section">
-            <h2>Our Mission</h2>
-            <p>
-                Our mission is to bridge the gap between education and employment by equipping learners with
-                industry-relevant programming skills, certifications, and career opportunities. We aim to foster a
-                community of passionate learners who are ready to take on the challenges of the ever-changing tech
-                landscape.
-            </p>
-        </section>
-        <section class="values-section">
-            <h2>What Sets Us Apart?</h2>
-            <ul>
-                <li><strong>Comprehensive Learning:</strong> Interactive courses that focus on practical skills.</li>
-                <li><strong>Certifications:</strong> Industry-recognized credentials to showcase your achievements.</li>
-                <li><strong>Career Support:</strong> Guidance, internship opportunities, and job placement assistance.</li>
-                <li><strong>Accessible Anywhere:</strong> Learn at your own pace with web and mobile access.</li>
-            </ul>
-        </section>
-        <section class="team-section">
-            <h2>Meet Our Team</h2>
-            <p>
-                We are a team of passionate developers, educators, and industry experts dedicated to creating a learning
-                experience that is engaging, effective, and impactful.
-            </p>
-        </section>
-    </main>
-    <footer id="contact">
-        <div class="container">
-            <p>&copy; 2025 Learn and Get Hired. All rights reserved.</p>
-            <p>Contact us: <a href="mailto:support@learnandgethired.com">support@learnandgethired.com</a></p>
-        </div>
-    </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Learn and Get Hired. All rights reserved.</p>
+      <p>Contact: <a href="mailto:support@learnandgethired.com">support@learnandgethired.com</a></p>
+    </div>
+  </footer>
+  <button onclick="logout()">Logout</button>
+  <script src="auth.js" defer></script>
+
 </body>
 </html>

@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internships And Jobs</title>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learnify -A platform For The Future Of Tech</title>
+  <meta name="description" content="Find the best programming and tech jobs. Apply to top companies hiring developers." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/jobs.css" />
 </head>
 <body>
-    <h1>Availible Jobs</h1>
-    <ul id="job-list"></ul>
-    <script>
-        const db = firebase.firestore();
-db.collection("jobs").get().then(snapshot => {
-    snapshot.forEach(doc => {
-        let job = doc.data();
-        let li = document.createElement("li");
-        li.innerHTML = `<strong>${job.title}</strong> -${job.company}`;
-        document.getElementById("job-list").appendChild(li);
-    });
-})
-    </script>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo">Learnify - A Platform For The Future Of Tech</a>
+      <nav class="primary-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="jobs.html" class="active">Jobs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="jobs-hero page-hero">
+      <div class="container">
+        <h1>Find Your Dream Job</h1>
+        <p>Browse through latest tech opportunities and apply directly.</p>
+      </div>
+    </section>
+
+    <section class="jobs-section container">
+      <div class="jobs-filters">
+        <input type="search" id="job-search" placeholder="Search jobs..." aria-label="Search jobs">
+        <select id="job-category" aria-label="Filter by category">
+          <option value="">All Categories</option>
+          <option value="frontend">Frontend Development</option>
+          <option value="backend">Backend Development</option>
+          <option value="fullstack">Full Stack</option>
+          <option value="mobile">Mobile Development</option>
+        </select>
+      </div>
+
+      <div id="jobs-list" class="jobs-list">
+        <!-- Jobs will be populated via JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Learn and Get Hired. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="jobs.js" defer></script>
+  <button onclick="logout()">Logout</button>
+  <script src="auth.js" defer></script>
 </body>
 </html>
