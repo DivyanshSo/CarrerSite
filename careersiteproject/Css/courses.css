@@ -50,3 +50,32 @@
   font-family:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: bold;
 }
+.course-highlights {
+  background-color: #092747;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin: 2rem 1rem;
+}
+
+.course-highlights h2 {
+  color: #c09cef;
+}
+
+.course-details {
+  background-color: #092747;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin: 2rem 1rem;
+}
+.detail-item {
+  background-color: #092747;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin: 2rem 1rem;
+}
